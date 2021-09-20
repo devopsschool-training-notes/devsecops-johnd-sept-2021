@@ -349,9 +349,107 @@ docker run -d -p 8081:80 httpd
 
 
 https://www.youtube.com/watch?v=z1Y_r4VI4t0
+==============================================================================
+==============================================================================
+What is SonarQube?
+===========================
+	Managing a Quality
+		   	- Code Quality
+			- Test Quality
+	Release
+		Communnity  - FOUCS - FREE
+		Developer
+		Enterprise
+		Data Center
+		Cloud 
+	From SonarSource
+	version 8.X
+	Dev using JAVA
+		- JAVA 11 for running
+		- normal user
+
+How to do Code Analysis?
+- Peer Code Review - Manual 
+- Static Code Review - FOCUS
+		- TOOL would do review of the source code
+		- rules would do review of the source code
+		- rule would do review of the source code
+		- Compile code would do review of the source code 
+
+Why to code Review?
+-------
+70% of bugs found in the software coz of BAD CODE QUALITY
+
+
+SonarQube Architecture
+========================================================
+SonarQube Server
+		WEB
+		Databases
+		- ALL RDBMS - h2 default
+		Rules
+
+---------LAPTOP----------------
+SonarQube Scanner
+
+
+Source Code
 
 
 
+
+   7  yum install java-11-openjdk-devel
+    8  sudo yum install java-11-openjdk-devel
+    9  clear
+   10  ls
+   11  java --version
+   12  wget https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-9.0.1.46107.zip
+   13  sudo yum install wget -y
+   14  clear
+   15  wget https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-9.0.1.46107.zip
+   16  sudo yum install unzip -y
+   17  clear
+   18  ls
+   19  unzip sonarqube-9.0.1.46107.zip
+   20  clear
+   21  ls
+   22  cd sonarqube-9.0.1.46107
+   23  clear
+   24  ls
+   25  cd bin/
+   26  ls
+   27  cd linux-x86-64/
+   28  clear
+   29  ls
+   30  ./sonar.sh start
+   31  ./sonar.sh status
+
+=================================================================
+Laptop
+=================
+Scanner
+https://docs.sonarqube.org/latest/analysis/scan/sonarscanner/
+- Download a Scanner
+- Modify a sonar-scanner.properties as per below notes.
+#----- Default SonarQube server
+sonar.host.url=http://65.2.40.139:9000/
+
+
+Source Code - 
+- git clone https://github.com/devopsschool-demo-labs-projects/java-sonarqube-helloworld-src
+- Modify sonar-project.properties as the requirement
+
+FINAL STUFF
+-----------
+- get into a dir of CODE where sonar-project.properties
+- run a scanner
+C:\tools\sonarqube\scanner\sonar-scanner-cli-4.6.2.2472-windows\bin\sonar-scanner.bat
+
+
+
+http://65.2.40.139:9000/
+admin
+admin123
 
 
 
