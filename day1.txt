@@ -1,0 +1,260 @@
+Agenda
+-----------------------
+Docker			HALF	
+SonarQube		HALF
+
+Jenkins			ONE		
+
+Selenium		HALF
+Jmeter			HALF
+
+Jacoco			HALF
+DevSecOps 	- 	THEoRY	HALF
+====================================================
+Start time - 9:30 AM
+End Time - 5:30 PM
+-----------------------
+Lunch - 1-2 PM
+TEA - 15mins
+	11AM
+	3:15PM
+	LAB
+	--------------
+=========================================================
+What is Docker?
+----------------------------------
+	Container mgmt tool
+	Soloman hykes
+	Dates 
+		2014
+	Release
+		Enterprise
+		Community
+		https://www.devopsschool.com/blog/difference-between-docker-community-edition-ce-vs-docker-enterprise-edition-ee-in-2020/
+		https://www.devopsschool.com/blog/upgrade-and-install-guide-docker-engine-community-to-docker-engine-enterprise/
+		https://www.devopsschool.com/blog/what-is-docker-enterprise-3-0-detailed-exaplanations/
+	Version
+	20.X
+	Golang
+	
+
+	What is Container?
+	----------------------------------
+	is your APP. 
+	Is a independent and it has independent  runtime env/resources to run.
+
+	Container is a isolated APP RUN env
+	with his own
+		USER -----------------------
+		MOUNT - RFS
+		PID TREE
+		NET
+
+	VMS vS Containers
+	----------------------------------------------
+	VMS contains
+	BOOT FS + ROOT FS + USER FS + APP FS
+ 
+	Containers Contains
+	ROOT FS + USER FS + APP FS
+
+
+	What is mgmt?
+	- 
+
+	What is tool?
+	- SAVE COST
+		--- While running apps
+
+	- SAVE TIME
+		PHYSICAL SERVER		VMS
+		---------------------------------------------------
+		3 hours			5 mins			1 SEC
+
+	- IMP QUALITY
+			Code Quality
+			Test Quality
+
+
+
+	What ONE APPS need to run?
+	What is the resources requirement to RUN 1 APP?
+	---------------------------------------------
+	HARDWARE
+		OS
+		(KERNAL + APPS)
+		================================
+		PID 			= 1 PID Namespace
+		USER	- ACCESS	= 1 USR Namespace - CAPABILTIES
+		FILESYSTEM		= 1 MNT Namespace 
+		NET			= 1 NET Namespace 
+		CPU+RAM			= CGROUP
+		================================
+				Dependent LIB
+				(Java)
+						APPs
+
+
+FILESYSTEM
+============================================
+BOOT FILESYSTEM === KERNAL
+ROOT FILESYSTEM
+USER FILESYSTEM
+APP FILESYSTEM
+==========================
+
+Other tools
+-----------------------
+https://www.devopsschool.com/blog/list-of-top-container-runtime-interface-projects/
+
+Docker Arc
+-----------------
+
+Human --> Docker Client --> Docker Server --> ContainerD --> Kernal
+         ------------------------------------
+		    docker engine
+
+Docker Components
+==============================================
+1. Docker Engine
+
+
+2. Docker Image
+-------------------
+ROOT FS + USER FS + APP FS
+----------------------------------
+ubuntu  + root  + /bin/bash
+ubuntu  + username  + jdk + tomcat + app
+
+VM Images--> VM
+----------------
+BOOT FS + ROOT FS + USER FS + APP FS
+
+3. registry
+	repository aka image
+		version of filesystem
+		----------------------
+			
+	https://hub.docker.com/
+
+4. THE MOMENT "DOCKER RUN IMAGE"
+
+HUMAN ---> Client -> Server --> ContainerD --> Kernal
+		
+						Create 1 USER
+						CREATE 1 NET
+						CREATE 1 PID TREE
+						CREATE 1 MNT from Image		
+						(1 COPY OF IMAGE)
+
+						ATTACH USER WITH NET + PIDTREE+MNT
+
+
+Container Lifecycle
+======================================================
+create -> start -> stop > start -> restart -> pause -> unpause -> kill -> remove
+
+Vm Lifecycle
+======================================================
+create -> start -> stop > start -> restart -> pause -> unpause -> kill -> remove
+
+
+Docker install
+------------------------
+https://www.devopsschool.com/blog/docker-installation-and-configurations/
+
+65.2.40.139
+centos
+centos123
+
+
+    1  clear
+    2  ls
+    3  sudo yum install -y yum-utils device-mapper-persistent-data lvm2
+    4  clear
+    5  sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+    6  sudo yum install –y https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
+    7  clear
+    8  sudo yum-config-manager --enable rhui-REGION-rhel-server-extras
+    9  sudo yum install -y docker-ce
+   10  clear
+   11  docker -v
+   16  sudo systemctl enable docker
+   17  sudo systemctl start docker
+   18  docker info
+   19  clear
+   20  which docker
+   21  which dockerd
+   22  which containerd
+   23  ps -eaf | grep docker
+   24  ps -eaf | grep containerd
+   25  history
+
+https://www.devopsschool.com/blog/the-docker-command-line-complete-referenece/
+
+  27  docker version
+   28  clear
+   29  docker info
+   30  clear
+   31  docker images
+   32  docker ps
+   33  docker ps -a
+   34  docker help
+
+httpd images
+----------------------------------
+base root file system + httpd
+
+
+  39  docker images
+   40  docker pull httpd
+   41  docker images
+   42  clear
+   43  ls
+   44  docker create httpd
+   45  docker ps
+   46  docker ps -a
+   47  docker create --name raj1 httpd
+   48  docker ps -a
+   49  docker start raj1
+   50  docker ps -a
+   51  docker stop raj1
+   52  docker ps -a
+   53  docker restart raj1
+   54  docker ps -a
+   55  clear
+   56  docker pause raj1
+   57  docker ps -a
+   58  docker unpause raj1
+   59  docker ps -a
+   60  docker kill raj1
+   61  docker ps -a
+   62  docker rm raj1
+   63  docker ps -a
+   64  clear
+   65  docker ps
+   66  docker run -d httpd
+   67  docker run -d httpd
+
+
+========================================================================================
+AWS				K8s
+----------------------------------------
+vm				container(pod)
+lb				lb
+dns				dns
+sto				sto
+
+docker -->  docker-compose -> kubernetes -> servicemess --> openshift
+
+https://www.devopsschool.com/blog/understanding-the-tools-sets-in-kubernetes-ecosystem/
+https://www.devopsschool.com/blog/list-of-top-service-mesh-implementation-tools-for-microservices-and-kubernetes/
+================================
+httpd
+------------------------------------------------------------
+
+
+LAB ==  20 mins.
+Assignment = TRY TO UNDERSTAND diff between docker pause vs unpause and stop vs kill.
+10 mins.
+
