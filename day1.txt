@@ -257,4 +257,106 @@ httpd
 LAB ==  20 mins.
 Assignment = TRY TO UNDERSTAND diff between docker pause vs unpause and stop vs kill.
 10 mins.
+-----------------------------------------------------------
+RUNNING -	
+		Deamon
+		RAM + CPU
+
+PYSICAL Server		VIRTUAL Server			Container
+is running 		is running			is running
+as long as		as long as			as long as
+PID 1 is running.	PID 1 is running.		PID 1 is running.
+
+PID 1 -SYSTEMD		PID 1 -SYSTEMD			PID 1 -ANYTHING
+							/bin/bahs
+							python
+							java
+							script
+
+
+==========================================================
+run
+----------------------------------
+pull + create + start + attached to a container(PID1)
+
+run -d
+----------------------------------
+pull + create + start + de-attached to a container(PID1)
+
+How to use a container?
+============================================
+GO INSIDE 
+------------------------
+/bin/bash
+psh
+----------------
+exec
+	It would execute an executable inside a container
+	you can go inside wth -it and bin/bash		
+
+ 144  docker run -d httpd
+  145  docker ps
+  146  clear
+  147  docker ps
+  148  docker exec 96bfe259bf6d ls
+  149  docker exec 96bfe259bf6d df
+  150  docker exec 96bfe259bf6d du
+  151  docker exec 96bfe259bf6d ps
+  152  which ps
+  153  clear
+  154  docker ps
+  155  docker exec -it 96bfe259bf6d /bin/bash
+  156  docker exec -it 96bfe259bf6d /bin/bash
+  157  docker exec -it 96bfe259bf6d /bin/bash
+  158  docker exec -it 96bfe259bf6d /bin/bash
+  159  clear
+  160  docker exec -it 96bfe259bf6d /bin/bash
+  161  docker exec  96bfe259bf6d ls
+  162  docker exec  96bfe259bf6d ls /tmp
+  163  docker exec  96bfe259bf6d touch /opt/ramukaka.txt
+  164  docker exec  96bfe259bf6d ls /opt
+
+
+attach
+- it get attached to PID1 of the container.
+  167  docker ps
+  168  docker attach 96bfe259bf6d
+  169  docker inspect 96bfe259bf6d
+  170  docker ps
+  171  docker inspect 1f89e458be89
+  172  curl http://172.17.0.4
+  173  nohup watch curl http://172.17.0.4 &
+  174  bg
+  175  docker attach 1f89e458be89
+	
+
+ 177  clear
+  178  docker run -d ubuntu
+  179  docker ps
+  180  docker ps -a
+  181  docker run  ubuntu ls
+  182  docker ps -a
+  183  docker run -itd ubuntu
+  184  docker ps
+  185  docker attach 85a1496a1121
+  186  docker ps
+
+ACCESS FORM OUTSIDE
+-----------------------
+NETWORK
+docker run -d -p 8080:80 httpd
+docker run -d -p 8081:80 httpd
+
+
+https://www.youtube.com/watch?v=z1Y_r4VI4t0
+
+
+
+
+
+
+
+
+
+
 
