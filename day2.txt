@@ -121,7 +121,7 @@ Feature of Jenkins
 	Feature					How		
 	- Automating a steps			- Jobs		DONE
 	- Integration				- DONE
-	- Scheduling				- Pending 	
+	- Scheduling				- DONE	
 	- Feedback				- Pending
 
 
@@ -168,6 +168,48 @@ admin
 admin123
 
 aa151ed920efecc05a94b4d3f2854b2e3936056c
+================================================================
+Reports <--- veracode (Cloud) <----- Code| Build)
+Reports <--- veracode (Cloud) <------ Jenkins using veracode APi plugins 
+
+==========================================================================
+Scheduling
+===========================================================================
+
+Method 1 – AT CERTAIN TIME AKA Build periodically		DONE
+Method 2 – AT CERTAIN TIME BUT Build only when there is Code changes AKA Poll SCM		DONE
+Method 3 – Trigger using command line or script AKA Trigger builds remotely (e.g., from scripts)		DONE
+Method 4 – Trigger this job if other job is triggerred AKA Build after other projects are built			DONE
+Method 5 – Trigger a job when there is PUSH into Github AKA GitHub hook trigger for GITScm polling
+Method 6 – Trigger a job when there is PUSH into Bitbucket AKA GitHub hook trigger for GITScm polling
+Method 7 – Trigger another job after this Job AKA Post Build Action => Build Other project	DONE
+Method 8 – Trigger a Jenkins jobs using Jenkins command line jar file
+
+
+https://www.devopsschool.com/blog/how-to-schedule-and-trigger-a-jenkins-job-automatically/
+
+
+
+curl -X POST --user rajesh:11b694647f7b573b01b5137dedb91ec0dc http://65.2.122.75:8080/job/Rajesh/job/compile/build?delay=0sec
+
+
+
+Watch about git
+https://www.youtube.com/watch?v=PkOq6jXocUc
+
+
+API Support TOKEN -
+WEB - TOKEN 
+
+-----------
+AGENT - PASSWORD
+
+
+
+
+
+
+
 
 
 
