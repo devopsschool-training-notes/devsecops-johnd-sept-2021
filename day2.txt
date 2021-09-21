@@ -1,0 +1,124 @@
+IP - 65.2.122.75
+=====================================================
+What is Jenkins?
+------------------------------
+	CI tool
+	Release
+		jenkins				- FREE - Community
+		Enterprise Jenkins
+		Jenkins X
+		blue Ocean
+	Dev in Java
+	Powered by Plugins 1000+ https://plugins.jenkins.io/
+	Driven by Community 
+	version 2.x
+
+What is CI?
+CI
+- Cont Integ
+--------------------------
+Auto Build + Auto Test
+--------------------------
+     Imm Feedback
+
+ARCH     DEV     DEV         BR      DEV    BR        BR        QA        QA    QA
+------------------------------------------------------------------------------------
+PLAN -> CODE -> ANALYSIS -> BUILD -> UT -> Package -> Archive -> Dep2QA -> AT -> CC 
+-------------------------------------------------------------------------------------
+JIRA -> GIT  -> Sonar    -> Maven -> JUNIT -> Jar  -> Artifactory-> Ansible -> Selen -> Jacoo		
+==========================================================================================
+		=============================AUTOMATED==================================
+
+				Integ between
+						- PHASES
+						- TOOLS
+						- TEAM
+
+==============================================================================================
+					Jenkins
+									PASS - RELEASE
+									FAILED - REPEAT
+
+OTHER
+------------------------
+Teamcity - Bamboo - CircleCI - UBuild - Gitlab - Github - AWS DevOps - Azure DevOps
+
+
+How to install jenkins
+- java
+- jenkins
+https://www.devopsschool.com/tutorial/jenkins/jenkins-installation-and-configuration.html
+
+http://65.2.122.75:8080/
+rajesh
+devopsschool
+
+
+Arch of Jenkins
+------------------
+https://www.devopsschool.com/blog/jenkins-architecture-explained/
+
+How to get started with Jenkins?
+----------------------------------------
+==============================================================
+
+What is your technolgoy?
+		JAVA		Which version	 tool is installed
+		Cpp
+		Python
+Where is ur source code
+		github			url 		access		tool is installed
+		gitlab
+		bitbucket
+		gerrit
+		aws
+		azure
+What is your builder?
+		tool is installed
+		maven		pom.xml			GOAL - compile - test - package	 
+		gradle		build.gradle		Tasks - compile - test - package
+		ant		build.xml		Target- compile - test - package 
+		msbuild		default.ms		Target- compile - test - package 
+		bash		.shell			
+		ansible		yaml
+		chef		.rb
+		puppet		.pp
+		cmd	
+		python		.py
+
+How frq you want this job to be trigg?
+		hourly
+
+
+How you want imm feedback?
+		email
+
+
+
+
+
+What is your technolgoy?
+		Java  - DONE
+Where is ur source code		
+https://github.com/devopsschool-demo-labs-projects/helloworld-java-maven
+What is your builder?
+	maven 	
+		compile - test - package
+How frq you want this job to be trigg?
+		hourly
+
+
+How you want imm feedback?
+		rajesh@devopsschool.com
+
+https://www.devopsschool.com/blog/devopsschool-github-referenece/
+https://www.devopsschool.com/blog/configure-jenkins-first-job-of-java-code-base-with-maven-build-tool/
+
+
+
+
+
+
+
+
+
