@@ -115,6 +115,62 @@ https://www.devopsschool.com/blog/devopsschool-github-referenece/
 https://www.devopsschool.com/blog/configure-jenkins-first-job-of-java-code-base-with-maven-build-tool/
 
 
+=============================================================
+Feature of Jenkins
+				
+	Feature					How		
+	- Automating a steps			- Jobs		DONE
+	- Integration				- DONE
+	- Scheduling				- Pending 	
+	- Feedback				- Pending
+
+
+Integration
+-----------
+ARCH     DEV     DEV         BR      DEV    BR        BR        QA        QA    QA
+------------------------------------------------------------------------------------
+PLAN -> CODE -> ANALYSIS -> BUILD -> UT -> Package -> Archive -> Dep2QA -> AT -> CC 
+			- BUILD1
+			- UT
+-------------------------------------------------------------------------------------
+JIRA -> GIT  -> Sonar    -> Maven -> JUNIT -> Jar  -> Artifactory-> Ansible -> Selen -> Jacoo		
+==========================================================================================
+					jenkins
+
+
+Jenkins -> Git === DONE
+Jenkins -> Maven === DONE
+Jenkins -> Junit === DONE	PUBLISH JUNIT REPORT
+https://www.devopsschool.com/blog/how-to-configure-junit-reports-at-jenkins/
+
+Jenkins -> jar ==== DONE	ARCHIVE a PACKAGE
+https://www.devopsschool.com/blog/how-to-archive-a-package-and-file-with-jenkins/
+
+Jenkins Integration with SonarQube?
+---------------------------------------
+- Install a plugins - SonarQube	DONE
+- Config a plugins 		DONE
+- Use a plugins
+		- CODE to be clone ---- JOB
+		https://github.com/devopsschool-demo-labs-projects/java-sonarqube-helloworld-src
+		- SCANNER to be run -- on SOURCE Code
+https://www.devopsschool.com/blog/how-to-integrate-sonarqube-with-jenkins-as-part-of-ci-cd/
+
+
+ANALYSIS -> BUILD -> UT -> Packages
+https://www.devopsschool.com/blog/trigger-jenkins-this-job-if-other-job-is-triggerred-aka-build-after-other-projects-are-built/
+
+
+SQ Server
+--------
+http://65.2.122.75:9000/
+admin
+admin123
+
+aa151ed920efecc05a94b4d3f2854b2e3936056c
+
+
+
 
 
 
