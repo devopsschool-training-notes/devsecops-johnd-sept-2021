@@ -110,6 +110,9 @@ C:\tools\apache-jmeter-5.4\bin>jmeter.bat
 Application
 
 
+http://13.126.220.1/index.html
+- 20 USERS / each second / INFILTY
+
 
 
 
