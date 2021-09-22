@@ -1,0 +1,102 @@
+http://13.126.220.1:8080/login?from=%2F
+rajesh
+devopsschool
+============================================
+- Feedback				- Pending
+==============================================
+Feedback
+		Email
+			mailer 
+			ext email
+		CHAT
+			slack
+			team
+			skype
+			whatsapp	using trello .etc
+		Dashboard (Pipeline)
+			"Build Pipeline" using Jobs
+					- You need to have multiple jobs
+					- each jobs need to integ
+			Pipeline using code
+			https://www.jenkins.io/doc/book/pipeline/
+			https://www.devopsschool.com/blog/jenkins-pipeline-complete-reference-tutorials/
+
+[10:09 AM] Shinghal Deepak
+    https://deere.webhook.office.com/webhookb2/6624d302-69f7-42af-893b-e0556369f484@39b03722-b836-496a-85ec-850f0957ca6b/JenkinsCI/84d27cc13a6f47e4b2beff18572913af/a3646892-68a4-4c64-8ea2-684ee8ee60bb
+	
+
+Q Answer
+how we migrate change of Jenkins from env to another env ? currently I hv scene one jenkin having jobs for all the env. is this good practice ?
+
+Nodes mgmt
+===========================
+JIRA -- Github
+
+JIRA TICKET ---> Github PR created
+			- UI
+			- COMMAND
+			- API
+-----------------
+
+Jira Trigger
+-------------
+	PROJECT - REPO
+	APP	- BRANCH
+		------
+		running a command
+====================================
+
+JENKINS_URL/job/Rajesh/job/compile/build?token=TOKEN_NAME or /buildWithParameters?
+
+
+curl -X POST --user rajesh:11b694647f7b573b01b5137dedb91ec0dc http://65.2.122.75:8080/job/Rajesh/job/compile/build?delay=0sec
+
+
+curl -X POST --user rajesh:11b694647f7b573b01b5137dedb91ec0dc http://65.2.122.75:8080/job/Rajesh/job/compile/buildWithParameters?delay=0sec?name=age
+===================================
+Lab ---- 15 mins
+
+Assignment#1 for DevSecOps Batch
+============================
+Pre
+- Step#1 - Register and Validate your account at bestDevOps.com - https://www.bestdevops.com/wp-login.php?action=register
+- Step#2 - Login
+- Step#3 - Create a POST on following  questions
+
+#Q1. Title - List of 20 popular commands of docker 
+
+#Q2. Title - How to configure SMTP server in Sonarqube?
+
+#Q3. Title - List of most popular plugins of Jenkins from plugins.jenkins.io/
+
+
+
+
+Notes
+/home/centos/sonarqube-9.0.1.46107/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
