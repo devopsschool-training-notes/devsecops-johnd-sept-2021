@@ -26,6 +26,62 @@ java -cp "C:\tools\selenium\clients\selenium-java-3.141.59\libs\*;" example1
 
 
 
+Server
+
+
+Node
+
+
+Code --> Server --> Node
+=======================================================================
+What is jacoco?
+----------------
+	Code Coverge Tool
+
+What is Code Coverage?
+------------------------------
+	Testing a testing
+	Validation of testing
+	--------------------------
+	Code Coverage
+		- % of Code has been covered by testing process - How?? 
+	Test Coverage
+		- % of test caeses has run by testing process - How??
+
+
+jacoco - exec
+cobertura - ser
+pycoverage
+ruby
+go
+
+Step 1  - Get a Code
+Step 2  - Instrument Code
+Step 3 - Run a code
+Step 4 - Run a test cases
+Step 5 - Merger Diff diff data file
+Step 6 - Gene a Reports
+
+Step 7 - Analyze a reports
+
+==================================
+Step 1-  Install JAVa and Set JAVA_HOME
+Step 2 - Download Extract maven and maven/bin --> PATH
+Step 3 - git clone https://github.com/devopsschool-demo-labs-projects/jacoco-maven-unittestv2
+Step 4 - mvn test
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
