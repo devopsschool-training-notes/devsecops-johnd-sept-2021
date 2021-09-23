@@ -1,0 +1,42 @@
+Step 1 - Install JDK 8/11
+
+Step 2 -  JAVA_HOME
+
+Step 3 -  Install Selenium = Selenium Clients into C:\tools\selenium\clients\selenium-java-3.141.59 
+from - https://www.selenium.dev/downloads/
+https://github.com/SeleniumHQ/selenium/releases/download/selenium-3.141.59/selenium-java-3.141.59.zip
+
+SPECIAL - MAKE SURE ALL JARS file IN ONE DIR
+
+
+Step 4 -  Download Driver into - C:\tools\selenium\web-drivers
+FF - https://github.com/mozilla/geckodriver/releases
+IE - https://www.selenium.dev/downloads/
+CHROME - https://chromedriver.chromium.org/downloads
+EGDE - https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/
+
+Step 5 - Write a code
+
+Step 6 - COMPiLE a CODE 
+javac -cp "C:\tools\selenium\clients\selenium-java-3.141.59\libs\*" example1.java
+
+
+Step 7 - RUN A CODE
+java -cp "C:\tools\selenium\clients\selenium-java-3.141.59\libs\*;" example1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	 
